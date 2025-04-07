@@ -66,7 +66,7 @@ def listar_livros():
         }
         livros_formatados.append(dicionario_livros)
 
-    return jsonify(livros_formatados)
+    return jsonify(livros_formatados), 200
 
 
 @app.route('/livros/<int:livro_id>', methods=['DELETE'])
